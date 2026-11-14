@@ -1,0 +1,5 @@
+.hero { text-align: center; padding: 100px 20px; background: #e8f0fe; }
+body.dark .hero { background: #1e1e2f; }
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 24px; }
+#theme-toggle { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; background: #222; color: #fff; }
