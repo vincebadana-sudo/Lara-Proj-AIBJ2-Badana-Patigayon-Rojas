@@ -1,0 +1,7 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #222; }
+body.dark { background: #121212; color: #eee; }
+nav { display: flex; gap: 20px; padding: 16px 32px; background: #222; }
+nav a { color: #fff; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { min-height: 70vh; }
+footer { padding: 20px; text-align: center; background: #222; color: #fff; }
