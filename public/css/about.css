@@ -1,0 +1,13 @@
+/* brown banner at the top, with space for the fixed navbar */
+.about-intro {
+    padding: 110px 20px 50px;
+    text-align: center;
+    background: #3b2a20;
+    color: #fff;
+}
+
+.about-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
