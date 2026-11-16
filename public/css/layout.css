@@ -1,7 +1,82 @@
-body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #222; }
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    transition: background 0.4s, color 0.4s;
+}
 body.dark { background: #121212; color: #eee; }
-nav { display: flex; gap: 20px; padding: 16px 32px; background: #222; }
-nav a { color: #fff; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: grid;                          /* was flex */
+    grid-template-columns: 1fr auto 1fr;    /* logo | links | toggle */
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.brand { justify-self: start; }
+
+.logo { height: 40px; width: auto; display: block; }
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    justify-self: center;                   /* centers Home / About / Contact */
+    align-items: center;
+}
+.nav-links a { color: #fff; text-decoration: none; font-weight: 600; transition: opacity 0.2s; }
+.nav-links a:hover { opacity: 0.7; }
+.nav-links a.active { border-bottom: 2px solid #fff; }
+
+#theme-toggle { justify-self: end; }        /* add this next to your existing toggle styles */
+/* Theme toggle */
+#theme-toggle {
+    width: 60px;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    background: #ccc;
+    transition: background 0.4s ease;
+}
+body.dark #theme-toggle { background: #3a3737; }
+
+#theme-toggle .knob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.4s ease;
+}
+body.dark #theme-toggle .knob { transform: translateX(30px); }
+
+#theme-toggle img { width: 20px; height: 20px; object-fit: contain; }
+
 main { min-height: 70vh; }
 footer { padding: 20px; text-align: center; background: #222; color: #fff; }
+
+@media (max-width: 600px) {
+    .nav-links { gap: 14px; font-size: 0.9rem; }
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+h1, h2, h3, .brand-name {
+    font-family: 'Playfair Display', Georgia, serif;
+}
