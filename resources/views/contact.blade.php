@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-<<<<<<< HEAD
 @section('content')
 <style>
     .contact-page {
@@ -9,6 +8,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
         margin: 0;
         padding: 0;
+        width: 100%;
     }
 
     .contact-hero {
@@ -395,12 +395,3 @@
 @push('scripts')
     <script src="{{ asset('js/contact.js') }}"></script>
 @endpush
-=======
-@section('title', 'Contact | Daily Grind')
-
-@section('content')
-    <section style="padding: 120px 20px; text-align: center;">
-        <h1>Contact Page (coming soon)</h1>
-    </section>
-@endsection
->>>>>>> dev-member1-Badana
