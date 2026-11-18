@@ -144,7 +144,7 @@ body.dark .section.intro {
 
 .product-card h3 { margin: 0; padding: 18px 20px; }
 
-body.dark .section.featured-products { color: #F5EBDD; background: #000000; }
+body.dark .section.featured-products { color: #F5EBDD; background: #1f1414; }
 body.dark .product-card { background: #3a2519; }
 
 @media (hover: none) {
