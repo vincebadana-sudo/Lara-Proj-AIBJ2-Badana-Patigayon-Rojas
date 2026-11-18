@@ -1,13 +1,98 @@
+body {
+    background: #faf3e6;
+}
+
 /* brown banner at the top, with space for the fixed navbar */
 .about-intro {
     padding: 110px 20px 50px;
     text-align: center;
-    background: #3b2a20;
-    color: #fff;
+    background:
+        linear-gradient(rgba(40, 25, 15, 0.8), rgba(40, 25, 15, 0.8)),
+        url("../images/background.jpg") center / cover;
+    color: #faf3e6;
 }
 
 .about-intro p {
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
+}
+
+.mission-vision {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.mv-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #c8a27a;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c8a27a;
+}
+
+.team {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.team h2 {
+    text-align: center;
+}
+
+.team-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #c8a27a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #3b2a20;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.role {
+    color: #c8a27a;
+    font-weight: bold;
+}
+
+/* stack everything in one column on phones */
+@media (max-width: 600px) {
+    .mission-vision,
+    .stats,
+    .team-cards {
+        flex-direction: column;
+    }
 }
