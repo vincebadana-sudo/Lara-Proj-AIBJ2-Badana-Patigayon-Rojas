@@ -33,20 +33,34 @@ body.dark .background {
 }
 .btn:hover { background: #a96e2c; transform: translateY(-2px); }
 
+/*section intro or the products page*/
+
 .section.intro {
     min-height: 70vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 100px 20px;
-    color: #fff;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../images/background2.jpg') top center / cover no-repeat;
+    color: #4A2A14;
+    background: #FAF3E6;
 }
 
 body.dark .section.intro {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('../images/background2.jpg') top center / cover no-repeat;
+    color: #F5EBDD;
+    background: #2B1A12;
+}
+
+.section.intro .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section.intro h2 { margin: 0 0 16px; line-height: 1.2; }
+.section.intro p  { margin: 0 auto 16px; line-height: 1.7; }
+
+@media (max-width: 600px) {
+    .section.intro { padding: 60px 20px; min-height: auto; }
 }
