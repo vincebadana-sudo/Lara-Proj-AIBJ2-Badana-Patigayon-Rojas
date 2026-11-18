@@ -15,16 +15,98 @@
         <a href="/about" class="btn">Our Story</a>
     </section>
 
-    <!-- Short description -->
-    <section class="section intro">
+    <!-- PART 2: Featured products -->
+    <section class="section featured-products">
         <div class="container">
-            <h2>Brewed with Care</h2>
-            <p class="lead">
-                Daily Grind is a neighborhood café built for early mornings, long study
-                sessions, and slow afternoons with friends. Every cup is made from
-                carefully roasted beans and served with a smile, because good coffee
-                should be part of your everyday routine.
-            </p>
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_coffee.jpg') }}" alt="Iced coffee">
+                        <div class="product-desc">
+                            <p>Start your day with our signature blend of freshly brewed iced coffee.</p>
+                        </div>
+                    </div>
+                    <h3>Freshly Brewed Iced Coffee</h3>
+                </div>
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_matcha.jpg') }}" alt="Iced matcha">
+                        <div class="product-desc">
+                            <p>Refresh yourself with our delicious iced matcha drink.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Matcha</h3>
+                </div>
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_mocha.jpg') }}" alt="Iced mocha">
+                        <div class="product-desc">
+                            <p>Indulge in our rich and creamy iced mocha, a perfect blend of coffee and chocolate.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Mocha</h3>
+                </div>
+
+                                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_caramel.jpg') }}" alt="Iced caramel">
+                        <div class="product-desc">
+                            <p>Delight in our sweet iced caramel drink, a perfect blend of coffee and rich caramel flavor.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Caramel</h3>
+                </div>
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_black_coffee.jpg') }}" alt="Iced black coffee">
+                        <div class="product-desc">
+                            <p>Refresh with our bold and smooth iced black coffee, perfect for coffee lovers.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Black Coffee</h3>
+                </div>
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_biscoff.jpg') }}" alt="Iced biscoff">
+                        <div class="product-desc">
+                            <p>Delight in our creamy iced biscoff drink, a perfect blend of coffee and rich biscoff flavor.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Biscoff</h3>
+                </div>
+
+            </div>
+                <!-- Pastries -->
+    <h3 class="category-title">Pastries</h3>
+    <div class="product-grid pastries">
+
+        <div class="product-card" tabindex="0">
+            <div class="product-media">
+                <img src="{{ asset('images/cinnamon_roll.jpg') }}" alt="Cinnamon roll">
+                <div class="product-desc">
+                    <p>Warm, gooey cinnamon roll finished with a sweet cream cheese glaze.</p>
+                </div>
+            </div>
+            <h3>Cinnamon Roll</h3>
+        </div>
+
+        <div class="product-card" tabindex="0">
+            <div class="product-media">
+                <img src="{{ asset('images/buko_pie.jpg') }}" alt="Buko pie">
+                <div class="product-desc">
+                    <p>A Filipino favorite: flaky golden crust filled with creamy young coconut custard.</p>
+                </div>
+            </div>
+            <h3>Buko Pie</h3>
+        </div>
+
+    </div>
         </div>
     </section>
 
