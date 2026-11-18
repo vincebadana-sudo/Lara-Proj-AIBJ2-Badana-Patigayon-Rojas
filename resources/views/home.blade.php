@@ -1,19 +1,31 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Home | Daily Grind')
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endpush
 
 @section('content')
-    <section class="hero">
-        <h1>Welcome</h1>
-        <p>Short description of your theme goes here.</p>
-        <button id="theme-toggle">Toggle Dark Mode</button>
-    </section>
-@endsection
 
-@push('scripts')
-    <script src="{{ asset('js/home.js') }}"></script>
-@endpush
+    <!-- Hero -->
+    <section class="background">
+        <h1>Daily Grind</h1>
+        <p>Freshly brewed coffee, warm pastries, and a cozy corner to start your day right.</p>
+        <a href="/about" class="btn">Our Story</a>
+    </section>
+
+    <!-- Short description -->
+    <section class="section intro">
+        <div class="container">
+            <h2>Brewed with Care</h2>
+            <p class="lead">
+                Daily Grind is a neighborhood café built for early mornings, long study
+                sessions, and slow afternoons with friends. Every cup is made from
+                carefully roasted beans and served with a smile, because good coffee
+                should be part of your everyday routine.
+            </p>
+        </div>
+    </section>
+
+@endsection

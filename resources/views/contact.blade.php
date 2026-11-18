@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<<<<<<< HEAD
 @section('content')
 <style>
     .contact-page {
@@ -394,3 +395,12 @@
 @push('scripts')
     <script src="{{ asset('js/contact.js') }}"></script>
 @endpush
+=======
+@section('title', 'Contact | Daily Grind')
+
+@section('content')
+    <section style="padding: 120px 20px; text-align: center;">
+        <h1>Contact Page (coming soon)</h1>
+    </section>
+@endsection
+>>>>>>> dev-member1-Badana
