@@ -51,6 +51,36 @@
                     <h3>Iced Mocha</h3>
                 </div>
 
+                                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_caramel.jpg') }}" alt="Iced caramel">
+                        <div class="product-desc">
+                            <p>Delight in our sweet iced caramel drink, a perfect blend of coffee and rich caramel flavor.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Caramel</h3>
+                </div>
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_black_coffee.jpg') }}" alt="Iced black coffee">
+                        <div class="product-desc">
+                            <p>Refresh with our bold and smooth iced black coffee, perfect for coffee lovers.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Black Coffee</h3>
+                </div>
+
+                <div class="product-card" tabindex="0">
+                    <div class="product-media">
+                        <img src="{{ asset('images/iced_biscoff.jpg') }}" alt="Iced biscoff">
+                        <div class="product-desc">
+                            <p>Delight in our creamy iced biscoff drink, a perfect blend of coffee and rich biscoff flavor.</p>
+                        </div>
+                    </div>
+                    <h3>Iced Biscoff</h3>
+                </div>
+
             </div>
         </div>
     </section>
