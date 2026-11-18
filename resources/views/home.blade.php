@@ -82,6 +82,31 @@
                 </div>
 
             </div>
+                <!-- Pastries -->
+    <h3 class="category-title">Pastries</h3>
+    <div class="product-grid pastries">
+
+        <div class="product-card" tabindex="0">
+            <div class="product-media">
+                <img src="{{ asset('images/cinnamon_roll.jpg') }}" alt="Cinnamon roll">
+                <div class="product-desc">
+                    <p>Warm, gooey cinnamon roll finished with a sweet cream cheese glaze.</p>
+                </div>
+            </div>
+            <h3>Cinnamon Roll</h3>
+        </div>
+
+        <div class="product-card" tabindex="0">
+            <div class="product-media">
+                <img src="{{ asset('images/buko_pie.jpg') }}" alt="Buko pie">
+                <div class="product-desc">
+                    <p>A Filipino favorite: flaky golden crust filled with creamy young coconut custard.</p>
+                </div>
+            </div>
+            <h3>Buko Pie</h3>
+        </div>
+
+    </div>
         </div>
     </section>
 
